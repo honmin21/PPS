@@ -1,0 +1,41 @@
+#include <stdio.h>
+void main()
+{
+    int a=9,b=4,c;
+    c=a+b;
+    printf("sum of two numbers is %d",c);
+    int d,e;
+    printf("enter d and e");
+    scanf("%d,%d",&d,&e);
+    d++;
+    printf("++d=%d\n",++d);
+    printf("--e=%d\n",--e);
+    c=a;
+    printf("c=%d\n",c);
+    a==b;
+    printf("%d==%d is %d\n",a,b,a==b);
+    a>b;
+    printf("%d>%d is %d\n",a,b,a>b);
+    a!=b;
+    printf("%d!=%d is %d\n",a,b,a!=b);
+    int res;
+    res=(a==b)&&(c>b);
+    printf("(a==b)&&(c<b) is %d\n",res);
+    int result;
+    result=(a==b)&&(c<b);
+    printf("(a==b)&&(c<b) is %d\n",result);
+    return;
+}
+
+OUTPUT:
+
+sum of two numbers is 13enter d and e 12 13
+12 13
+++d=14
+--e=-1
+c=9
+9==4 is 0
+9>4 is 1
+9!=4 is 1
+(a==b)&&(c<b) is 0
+(a==b)&&(c<b) is 0
